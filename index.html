@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Steps Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="form1">
+      <h3>Create Account</h3>
+      <input type="text" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <div class="btn-box">
+        <button type="button" id="next1">Next</button>
+      </div>
+    </form>
+
+    <form id="form2">
+      <h3>Social Links Account</h3>
+      <input type="text" placeholder="Facebook">
+      <input type="text" placeholder="LinkedIn">
+      <input type="text" placeholder="Github">
+      <div class="btn-box">
+        <button type="button" id="back1">back</button>
+        <button type="button" id="next2">Next</button>
+      </div>
+    </form>
+
+    <form id="form3">
+      <h3>Personal Info</h3>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required>
+      <input type="text" placeholder="Mobile No." required>
+      <div class="btn-box">
+        <button type="button" id="back2">back</button>
+        <button type="button" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <div class="step-row">
+      <div id="progress"></div>
+      <div class="step-col"><small>Step 1</small></div>
+      <div class="step-col"><small>Step 2</small></div>
+      <div class="step-col"><small>Step 3</small></div>
+      <div class="step-col"><small>Registered</small></div>
+
+    </div>
+    <div id="success">
+      <div class="success-element">
+        <i class="fas fa-check-circle fa-7x"></i>      
+        <h2>Congratulations! <span>you're Registered Now</span></h2>
+      </div>
+    </div>
+  </div>
+  <script src="file.js"></script>
+</body>
+</html>
